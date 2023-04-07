@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    background-image: linear-gradient(right red green);
+}
+
+#dongho{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(crimson 10%, indigo 55%, violet 80%);
+}
+.time{
+    text-align: center;
+    padding: 50px;
+    font-size: 100px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    padding: 20px 30px;
+    margin: 0 10px 0 0;
+    font-size: 30px;
+
+}
+#start{
+    background-color: rgb(57, 57, 192);
+    
+}
+
+#stop{
+    background-color: rgb(208, 44, 44);
+}
+
+#reset{
+    background-color:rgb(211, 143, 18) ;
+}
