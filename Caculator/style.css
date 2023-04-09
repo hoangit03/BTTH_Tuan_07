@@ -31,12 +31,12 @@ body{
     width: 100%;
     text-align: end;
     color: #5166d6;
-    height: 50px;
-    line-height: 50px;
+    height: 100px;
+    line-height: 100px;
     padding: 0 20px;
+    border-radius: 10px;
     margin: 20px 0;
-    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
-    inset -5px -5px 20px #fffb;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 20px #fffb;
 }
 .calculator .buttons span{
     position: relative;
@@ -66,7 +66,7 @@ body{
     color: #edf1f4;
 }
 .calculator .buttons #plus{
-    grid-row: span 3;
+    grid-row: span 2;
     background: #28d528;
     color: #edf1f4;
 }

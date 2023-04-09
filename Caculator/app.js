@@ -1,14 +1,13 @@
+
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
-
-
-let btn = $$('span')
-let value = $('#value')
-
-for(let i = 0; i<btn.lenght;i++){
-    btn[i].addEventListener("click", function(){
+var btn = $$('span')
+var value = $('#value')
+console.log(value)
+for(let i = 0;i < btn.length; i++){
+    btn[i].addEventListener("click",function(){
         if(this.innerHTML == "="){
-            value.innerHTML = eval(value.innerHTML);
+            value.innerHTML = eval(value.innerHTML)
         }
         else{
             if(this.innerHTML == "AC"){

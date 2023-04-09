@@ -11,7 +11,7 @@
     
     <div class="calculator">
         <div class="buttons">
-            <h2 id="value">123</h2>
+            <h2 id="value"></h2>
             <span id="ac">AC</span>
             <span>*</span>
             <span>/</span>
@@ -31,31 +31,8 @@
             <span id="equal">=</span>
         </div>
     </div>
-    <script>
-        const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
 
-
-let btn = $$('span')
-let value = $('#value')
-
-for(let i = 0; i<btn.lenght;i++){
-    btn[i].addEventListener("click", function(){
-        if(this.innerHTML == "="){
-            console.log(this.innerHTML)
-        }
-        else{
-            if(this.innerHTML == "AC"){
-                value.innerHTML = ""
-            }
-            else{
-                value.innerHTML += this.innerHTML
-            }
-        }
-    })
-}
-    </script>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
         
 </body>
 </html>
