@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#edf1f4;
+}
+
+.calculator{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.2),
+    -15px -15px 20px #fffb;
+}
+
+.calculator .buttons{
+    position: relative;
+    display: grid;
+}
+.calculator .buttons #value{
+    position: relative;
+    grid-column: span 4;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin: 20px 0;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #fffb;
+}
+.calculator .buttons span{
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 20px #fffb;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border-radius: 10px;
+    min-width: 40px;
+}
+
+.calculator .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #fffb;
+    color: red;
+}
+
+
+.calculator .buttons #ac{
+    grid-column: span 2;
+    background: #fa4141;
+    color: #edf1f4;
+}
+.calculator .buttons #plus{
+    grid-row: span 3;
+    background: #28d528;
+    color: #edf1f4;
+}
+.calculator .buttons #equal{
+    background: #3677d8;
+    color: #edf1f4;
+}
+.calculator .buttons #ac:active,
+.calculator .buttons #plus:active,
+.calculator .buttons #equal:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px rgba(0,0,0,0.1);
+}
+
