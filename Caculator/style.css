@@ -59,7 +59,9 @@ body{
     color: red;
 }
 
-
+.calculator .buttons #remove{
+    background-color: rgb(225, 225, 55);
+}
 .calculator .buttons #ac{
     grid-column: span 2;
     background: #fa4141;

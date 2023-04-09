@@ -13,6 +13,10 @@ for(let i = 0;i < btn.length; i++){
             if(this.innerHTML == "AC"){
                 value.innerHTML = ""
             }
+            else if(this.innerHTML == "C"){
+                let string = value.innerHTML
+                value.innerHTML = string.substring(0, string.length-1)
+            }
             else{
                 value.innerHTML += this.innerHTML
             }
